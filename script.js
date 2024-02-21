@@ -4,10 +4,10 @@ const buttonSubmit = document.querySelector("#button");
 
 buttonSubmit.addEventListener("click", function(event) {
     event.preventDefault();
-    let pis = (document.getElementById("pis_cofins").value);
+   let pis = (document.getElementById("pis_cofins").value);
     let icms = (document.getElementById("icms").value);
-    let precoNet = document.querySelector("#preco_net").value;
-    let taxaUsd = document.querySelector("#taxa_usd").value;
+    let precoNet = (document.getElementById("preco_net").value);
+    let taxaUsd = (document.getElementById("taxa_usd").value);
   /*let Imposto_total = document.getElementById("valor_imposto");
 
  /*   
@@ -26,7 +26,9 @@ const precoInput = parseFloat(precoNet)/parseFloat(liquido)*parseFloat(porcent);
 const precoArredondado = (precoInput.toFixed(4)); //precisei utiliar o toFixed para diminuir as casas decimais//
 converDolar = precoArredondado * taxaUsd;
 
-
-console.log(impostoTotal,liquido,precoArredondado,converDolar);
+document.querySelector(".valor_imposto").innerHTML = `${impostoTotal}`;
+document.querySelector(".valor_liquido").innerHTML = `${liquido}`;
+document.querySelector(".valor_bruto").innerHTML = `${precoArredondado}`;
+document.querySelector(".valor_brutoReal").innerHTML = `${converDolar}`;
 
 })
