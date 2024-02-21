@@ -1,23 +1,75 @@
 body{
-background: linear-gradient(#0071AD, #00497C,#53B847);
+    background-image: url(moneyedit.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2000px;
+    }
+    #caixa1{
+        margin: 0% auto;
+        width: 50%;
+    }
+    .menu{
+        margin: 5%;
+    }
+    .titulo1{
+        color: aliceblue;
+        text-align: center;
 
-}
-#caixa1{
-width: 50%;
-margin: 0% auto;
+    }
+    #preco_net{
+        
+        font-size: medium;
+    }
+    #pis_cofins{
+        font-size: medium;
+    }
+    #icms{
+        font-size: medium;
+    }
+    #taxa_usd{
+        font-size: medium;
 
-}
-.valor_imposto{
-
-}
-.valor_liquido{
-
-}
-
-.valor_bruto{
-
-
-}
-.valor_brutoReal{
+    }
+    .valor_imposto{
   
-}
+        margin: 1px;
+    }
+    .precoBruto{
+        margin: 10%;
+        align-items: center;
+        text-align: center;
+        font-size: x-large;
+    }
+    .valores{
+        text-align: center;
+        font-size: x-large;
+        font-family:  sans-serif;
+        align-items: center;
+    }
+    .valor_liquido{
+    
+    }
+    
+    .valor_bruto{
+
+    }
+    .valor_brutoReal{
+      
+    }
+    #rodaPe{
+text-align: center;
+margin-top: 300px;
+
+    }
+    #button{
+        border: 0;
+        padding: 10px;
+        width: 100px;
+        height: 40px;
+        display: inline-block;
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 4px;
+        font-weight: bold;
+
+    }
